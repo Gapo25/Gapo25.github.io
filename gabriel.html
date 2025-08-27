@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - SOY GABRIEL & SOY STEAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1f1f3a 0%, #0d0d1a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 1280px;
+            margin: auto;
+            padding: 1.5rem;
+        }
+        .project-card {
+            background-color: rgba(42, 42, 68, 0.5); /* Fondo semitransparente */
+            backdrop-filter: blur(10px); /* Efecto de desenfoque */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            background-color: rgba(42, 42, 68, 0.8);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Encabezado de la página -->
+    <header class="bg-gradient-to-r from-indigo-800 to-purple-800 shadow-xl py-8">
+        <div class="container text-center">
+            <h1 class="text-4xl font-extrabold text-white tracking-wide">Archivo Creativo</h1>
+            <p class="text-indigo-200 mt-2">Una mirada a los proyectos de SOY GABRIEL y SOY STEAM.</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main class="py-16 flex-grow">
+        <div class="container">
+            <p class="text-center text-gray-400 mb-16 max-w-3xl mx-auto text-lg">
+                Dos proyectos que marcan un hito en la creatividad visual y digital, cada uno con una narrativa única y un impacto duradero.
+            </p>
+
+            <!-- Sección SOY GABRIEL -->
+            <section class="mb-20">
+                <div class="project-card rounded-3xl p-8 flex flex-col md:flex-row items-center gap-12">
+                    <!-- Imagen de "Soy Gabriel" -->
+                    <div class="w-full md:w-1/2">
+                        <img src="https://storage.googleapis.com/generativeai-web-site-assets/images/1000027027.png" alt="Proyecto Soy Gabriel" class="rounded-2xl w-full h-auto shadow-lg">
+                    </div>
+                    <!-- Introducción al proyecto -->
+                    <div class="w-full md:w-1/2 text-center md:text-left">
+                        <h2 class="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">SOY GABRIEL</h2>
+                        <span class="inline-block bg-indigo-700 text-sm font-semibold px-4 py-1 rounded-full mb-4 opacity-80">PXAR ANIMATION STUDIOS (2003)</span>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Presentamos el proyecto "SOY GABRIEL", una pieza conceptual de animación del año 2003. Esta obra combina diversos elementos visuales para explorar ideas y emociones a través de un estilo único y evocador.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección SOY STEAM -->
+            <section>
+                <div class="project-card rounded-3xl p-8 flex flex-col md:flex-row-reverse items-center gap-12">
+                    <!-- Imagen de "Soy Steam" -->
+                    <div class="w-full md:w-1/2">
+                        <img src="https://storage.googleapis.com/generativeai-web-site-assets/images/1000027028.png" alt="Proyecto Soy Steam" class="rounded-2xl w-full h-auto shadow-lg">
+                    </div>
+                    <!-- Introducción al proyecto -->
+                    <div class="w-full md:w-1/2 text-center md:text-left">
+                        <h2 class="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400">SOY STEAM</h2>
+                        <span class="inline-block bg-indigo-700 text-sm font-semibold px-4 py-1 rounded-full mb-4 opacity-80">PC - DIGITAL DOWNLOAD ONLY (2003)</span>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Explora el universo de los juegos de PC con "SOY STEAM". Este proyecto destaca la distribución digital de videojuegos y presenta una selección de títulos populares que definieron la experiencia de juego en computadoras.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-black bg-opacity-30 py-6 mt-auto">
+        <div class="container text-center text-gray-500">
+            <p class="text-sm">&copy; 2024 Archivo de Proyectos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
